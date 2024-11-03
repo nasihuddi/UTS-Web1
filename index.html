@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Manajemen Karyawan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+      <div class="logo" id="center">
+        <img src="asset/icons.admin.png" style="width: 50px;" id="text"> 
+        <p id="text" style="color: white; font-size: 1.2em; font-weight: bold;">Nasihuddin</p>
+        <button id="menu" onclick="menu()"><img src="asset/menu.png"></button>
+      </div>
+      <div class="profil" id="center">
+        <img src="asset/foto1.jpeg">
+        <div class="text-profil" id="text">
+          <p>Welcome, Nasihuddin</p>
+          <p style="font-size: 0.95em; font-weight: bold;">Administrator</p>
+        </div>
+      </div>
+      <div class="dashboard">
+        <a href="index.html" id="center" style="background: #0087ff; color: white; font-size: 1.2em; font-weight: bold;">
+          <img src="asset/dashboard.png">
+          <p id="text">Dashboard</p>
+        </a>
+      </div>
+      <div class="menu-lain">
+        <h4 id="text">MENU KARYAWAN</h4>
+        <a href="./karyawan.html" id="center">
+          <img src="asset/users2.png">
+          <p id="text">Karyawan</p>
+        </a>
+        <a href="./jabatan.html" id="center">
+          <img src="asset/adduser2.png">
+          <p id="text">Jabatan</p>
+        </a>
+        <a href="./divisi.html" id="center">
+          <img src="asset/adduser2.png">
+          <p id="text">Divisi</p>
+        </a>
+      </div>
+      <div class="menu-lain">
+        <h4 id="text">MENU ABSENSI</h4>
+        <a href="absensi.html" id="center">
+          <img src="asset/absent2.png">
+          <p id="text">Absensi</p>
+        </a>
+        <a href="./izin.html" id="center">
+          <img src="asset/izin2.png">
+          <p id="text">Izin</p>
+        </a>
+        <a href="./lembur.html" id="center">
+          <img src="asset/izin2.png">
+          <p id="text">Lembur</p>
+        </a>
+      </div>
+      <div class="menu-lain">
+        <h4 id="text">MENU PENGGAJIAN</h4>
+        <a href="index.html" id="center">
+          <img src="asset/gaji.png">
+          <p id="text">Slip Gaji</p>
+        </a>
+        <a href="index.html" id="center">
+          <img src="asset/print.png">
+          <p id="text">Cetak Slip Gaji</p>
+        </a>
+      </div>
+      <div class="menu-lain">
+        <h4 id="text">MENU LAPORAN</h4>
+        <a href="index.html" id="center">
+          <img src="asset/laporan.png">
+          <p id="text">Cetak Laporan</p>
+        </a>
+      </div>
+      <div class="menu-lain">
+        <h4 id="text">MENU ADMIN</h4>
+        <a href="index.html" id="center">
+          <img src="asset/pengguna.png">
+          <p id="text">Pengguna</p>
+        </a>
+      </div>
+      <div class="dashboard" style="padding-bottom: 50px;">
+        <a href="index.html" style="background: red; text-align: center; justify-content: center;" id="center">
+          <img src="asset/logout.png">
+          <p id="text">Logout</p>
+        </a>
+      </div>
+    </nav>
+  
+    <header id="header">
+      <img src="asset/user.png">
+    </header>
+  
+    <div class="k1" id="k1">
+      <h2>Sistem Informasi Manajemen Karyawan</h2>
+      <h3>Admin Dashboard</h3>
+    </div>
+  
+    <div class="overview" id="overview">
+      <div class="ov1">
+        <img src="asset/users.png" style="background: skyblue;">
+        <div class="ov-text">
+          <p style="color: grey;">Data</p>
+          <p style="color: grey;">Pegawai</p>
+          <p style="font-size: 1.5em;">13</p>
+        </div>
+      </div>
+      <div class="ov1">
+        <img src="asset/absent.png" style="background: green;">
+        <div class="ov-text">
+          <p style="color: grey;">Absensi Hari Ini</p>
+          <p style="color: grey;">01 November 2024</p>
+          <p style="font-size: 1.5em;">0</p>
+        </div>
+      </div>
+      <div class="ov1">
+        <img src="asset/check.png" style="background: darkblue;">
+        <div class="ov-text">
+          <p style="color: grey;">Izin Menunggu</p>
+          <p style="color: grey;">Konfirmasi</p>
+          <p style="font-size: 1.5em;">3</p>
+        </div>
+      </div>
+      <div class="ov1">
+        <img src="asset/check.png" style="background: blueviolet;">
+        <div class="ov-text">
+          <p style="color: grey;">Lembur Menunggu</p>
+          <p style="color: grey;">Konfirmasi</p>
+          <p style="font-size: 1.5em;">2</p>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>

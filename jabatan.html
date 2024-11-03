@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jabatan</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="logo" id="center">
+      <img src="asset/icons.admin.png" style="width: 50px;" id="text"> 
+      <p id="text" style="color: white; font-size: 1.2em; font-weight: bold;">Nasihuddin</p>
+      <button id="menu" onclick="menu()"><img src="asset/menu.png"></button>
+    </div>
+    <div class="profil" id="center">
+      <img src="asset/foto1.jpeg">
+      <div class="text-profil" id="text">
+        <p>Welcome, Nasihuddin</p>
+        <p style="font-size: 0.95em; font-weight: bold;">Administrator</p>
+      </div>
+    </div>
+    <div class="dashboard">
+      <a href="index.html" id="center" style="color: grey; font-size: 1em; font-weight: normal;">
+        <img src="asset/dashboard.png">
+        <p id="text">Dashboard</p>
+      </a>
+    </div>
+    <div class="menu-lain">
+      <h4 id="text">MENU KARYAWAN</h4>
+      <a href="./karyawan.html" id="center">
+        <img src="asset/users2.png">
+        <p id="text">Karyawan</p>
+      </a>
+      <a href="./jabatan.html" id="center" style="background: #0087ff; color: white; font-size: 1.2em; font-weight: bold;">
+        <img src="asset/adduser2.png">
+        <p id="text">Jabatan</p>
+      </a>
+      <a href="./divisi.html" id="center">
+        <img src="asset/adduser2.png">
+        <p id="text">Divisi</p>
+      </a>
+    </div>
+    <div class="menu-lain">
+      <h4 id="text">MENU ABSENSI</h4>
+      <a href="absensi.html" id="center">
+        <img src="asset/absent2.png">
+        <p id="text">Absensi</p>
+      </a>
+      <a href="izin.html" id="center">
+        <img src="asset/izin2.png">
+        <p id="text">Izin</p>
+      </a>
+      <a href="lembur.html" id="center">
+        <img src="asset/izin2.png">
+        <p id="text">Lembur</p>
+      </a>
+    </div>
+    <div class="menu-lain">
+      <h4 id="text">MENU PENGGAJIAN</h4>
+      <a href="index.html" id="center">
+        <img src="asset/gaji.png">
+        <p id="text">Slip Gaji</p>
+      </a>
+      <a href="index.html" id="center">
+        <img src="asset/print.png">
+        <p id="text">Cetak Slip Gaji</p>
+      </a>
+    </div>
+    <div class="menu-lain">
+      <h4 id="text">MENU LAPORAN</h4>
+      <a href="index.html" id="center">
+        <img src="asset/laporan.png">
+        <p id="text">Cetak Laporan</p>
+      </a>
+    </div>
+    <div class="menu-lain">
+      <h4 id="text">MENU ADMIN</h4>
+      <a href="index.html" id="center">
+        <img src="asset/pengguna.png">
+        <p id="text">Pengguna</p>
+      </a>
+    </div>
+    <div class="dashboard" style="padding-bottom: 50px;">
+      <a href="index.html" style="background: red; text-align: center; justify-content: center;" id="center">
+        <img src="asset/logout.png">
+        <p id="text">Logout</p>
+      </a>
+    </div>
+  </nav>
+
+  <header id="header">
+    <img src="asset/user.png">
+  </header>
+
+  <div class="k1" id="k1">
+    <h2>Dashboard</h2>
+  </div>
+
+  <div class="overview" id="overview">
+    <div class="ov1">
+      <div class="judul">
+        <p style="font-size: 1.5em; color: grey;">Data Jabatan</p>
+        <a href="tambahjabatan.html">
+          <img src="asset/tambah.png">
+          <p>Tambah Jabatan</p>
+        </a>
+      </div>
+      <div class="show">
+        <div class="sh">
+          <p style="padding-right: 5px;">show</p>
+          <select>
+            <option selected>10</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+          <p style="padding-left: 5px;">entries</p>
+        </div>
+        <div class="sc">
+          <p style="margin-right: 5px;">Search:</p>
+          <input type="text" name="cari">
+        </div>
+      </div>
+
+      <div class="tabel">
+          <table width="100%">
+            <thead>
+              <th width="5%">No</th>
+              <th>Kode Jabatan</th>
+              <th>Jabatan</th>
+              <th>Aksi</th>
+            </thead>
+            <tr>
+              <td>1</td>
+              <td>JAB001</td>
+              <td>Kepala Bagian</td>
+              <td id="aksi">
+                <a href="#view"><img src="asset/edit.png"></a>
+                <a href="#view"><img src="asset/remove.png"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>JAB002</td>
+              <td>Kepala Sub Bagian</td>
+              <td id="aksi">
+                <a href="#view"><img src="asset/edit.png"></a>
+                <a href="#view"><img src="asset/remove.png"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>JAB003</td>
+              <td>Staf</td>
+              <td id="aksi">
+                <a href="#view"><img src="asset/edit.png"></a>
+                <a href="#view"><img src="asset/remove.png"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>JAB004</td>
+              <td>Warek</td>
+              <td id="aksi">
+                <a href="#view"><img src="asset/edit.png"></a>
+                <a href="#view"><img src="asset/remove.png"></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript">
+  function menu() {
+    var posting = document.getElementById('navbar');
+    var header = document.getElementById('header');
+    var k1 = document.getElementById('k1');
+    var overview = document.getElementById('overview');
+    const center = document.querySelectorAll('#center');
+    const link = document.querySelectorAll('#text');
+
+    link.forEach(link => {
+      if (link.style.display === 'none') {
+        link.style.display = 'block'; 
+      } else {
+          link.style.display = 'none';
+      }
+    });
+
+    center.forEach(center => {
+      if (center.style.justifyContent === 'center') {
+        center.style.justifyContent = ''; 
+      } else {
+          center.style.justifyContent = 'center';
+      }
+    });
+
+    if (posting.style.width === '100px') {
+        posting.style.width = '300px'; 
+    } else {
+        posting.style.width = '100px';
+    }
+
+    if (header.style.marginLeft === '100px') {
+        header.style.marginLeft = '300px'; 
+    } else {
+        header.style.marginLeft = '100px';
+    }
+
+    if (k1.style.marginLeft === '100px') {
+        k1.style.marginLeft = '300px'; 
+    } else {
+        k1.style.marginLeft = '100px';
+    }
+
+    if (overview.style.marginLeft === '100px') {
+        overview.style.marginLeft = '300px'; 
+    } else {
+        overview.style.marginLeft = '100px';
+    }
+
+  }
+</script>
+</html>
